@@ -25,6 +25,7 @@ public class second extends AppCompatActivity {
                 startActivity(new Intent(second.this,third.class));
             }
         });
+
         btn2=findViewById(R.id.Btn2);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override

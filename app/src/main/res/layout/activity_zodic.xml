@@ -1,9 +1,503 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
     tools:context=".zodic">
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="serif"
+                android:text="Zodiac Sign"
+                android:textColor="#C61414"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/virgo1"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Virgo"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/aquarius2"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aquarius"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/gemini3"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gemini"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/capricorn4"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Capricorn"
+                            android:textColor="#fff"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#8F8B8B"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/cancer5"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cancer"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/aries6"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aries"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/taurus7"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Taurus"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/scorpio8"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Scorpio"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/libra9"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Libra"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/sagittarius10"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sagittarius"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/pisces11"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pisces11"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#373434"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#958C8C"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/leo12"
+                            android:layout_marginTop="18dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Leo"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"/>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+

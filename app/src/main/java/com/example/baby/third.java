@@ -25,6 +25,16 @@ public class third extends AppCompatActivity {
                 startActivity(new Intent(third.this,serachbox1.class));
             }
         });
+
+        btn2=findViewById(R.id.imageView5);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(third.this,zodic.class));
+
+            }
+        });
+
         btn3=findViewById(R.id.imageView6);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
